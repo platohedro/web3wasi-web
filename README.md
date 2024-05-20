@@ -10,4 +10,5 @@ npm run dev
 
 ## Tecnologias
 
-[Astro](astro.build)
+[Astro](https://astro.build/)
+[Tailwind](https://tailwindcss.com/)
