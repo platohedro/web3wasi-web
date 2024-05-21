@@ -1,17 +1,17 @@
 ---
-// Define props from Astro
-const { src = "https://www.ivoox.com/player_es_podcast_2080380_zp_1.html", width = "100%", height = "400" } = Astro.props;
+// Definir props de Astro
+const { src = "https://www.ivoox.com/player_es_podcast_2080380_zp_1.html", width = "100%", height = "400px" } = Astro.props;
 
-// Define TypeScript interface for props
+// Definir la interfaz TypeScript para las props
 interface Props {
   src?: string;
-  width?: string;
+  width?: string | number;
   height?: string;
 }
 ---
 <div class="text-center">
   <h1 class="text-4xl text-white pb-4 font-bold">RadioCypher</h1>
   <div class="inline-block">
-    <iframe src={src} width="600" max-width="700px" height={height} allowfullscreen="" loading="lazy" style="border:0;"></iframe>
+    <iframe src={src} width={width} height={height} allowfullscreen="" loading="lazy" style="border:0; max-width:100%;"></iframe>
   </div>
 </div>
