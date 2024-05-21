@@ -1,8 +1,8 @@
 /* Dark mode colors. */
 :root {
-    --backdrop-color: #272727cc;
-    --sl-color-accent: #ff801f;
-    --sl-color-accent-high: #ffa057;
+    --backdrop-color: #17646a;
+    --sl-color-accent: #2dcbe4;
+    --sl-color-accent-high: #2dcbe4;
     --sl-color-accent-low: #562800;
     --sl-color-black: #181818;
     --sl-color-gray-1: #eee;
@@ -12,7 +12,7 @@
     --sl-color-gray-5: #383838;
     --sl-color-gray-6: #272727;
     --sl-color-white: #fff;
-    --list-marker-color: #fb923c;
+    --list-marker-color: #2dcbe4;
 }
 
 /* Light mode colors. */
