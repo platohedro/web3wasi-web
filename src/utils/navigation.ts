@@ -1,9 +1,9 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Home", url: "/" },
-  { name: "Escuelita web 3", url: "/products" },
+  { name: "Web3 EsCool", url: "/products" },
   { name: "Infraestructura", url: "/services" },
-  { name: "CriptoAventuras", url: "/blog" },
+  { name: "Bitácora", url: "/blog" },
   { name: "Acerca de", url: "/contact" },
 ];
 // An array of links for footer
