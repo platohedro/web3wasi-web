@@ -1,14 +1,58 @@
 ---
-// Definir props de Astro
-const { src = "https://www.ivoox.com/player_es_podcast_2080380_zp_1.html", width = "500", height = "400px" } = Astro.props;
-
 // Definir la interfaz TypeScript para las props
+import { Image } from "astro:assets";
+import { BtnNuevo } from "@components/ui/buttons/BtnNuevo.astro";
+
 interface Props {
+  title?: string;
+  subTitle?: string;
   src?: string;
-  width?: string | number;
-  height?: string;
+  url?: string;
+  
 }
+// Define props from Astro
+const { title, subTitle } = Astro.props;
+
 ---
 
+<div class="text-center pb-8 pt-8">
+  <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
+<p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl">{subTitle}</p>
+</div>
 
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="flex flex-col justify-center items-center">
+    <Image
+        width={400}
+        height={400}
+        src="/public/acelerador.jpg"
+        alt="alt"               
+        format={"jpg"}  
+        class="pb-8"    
+	 />
+    <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
+    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4">hola</p>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Botón</button>
+
+    <BtnNuevo 
+      title={title}
+      url=""
+      />
+      
+  </div>
+  <div class="hidden md:flex flex-col justify-center items-center">
+    <Image
+        width={400}
+        height={400}
+        src="/public/acelerador.jpg"
+        alt="alt"               
+        format={"jpg"}  
+        class="pb-8"        
+	 />
+    <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
+    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4">loca</p>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Botón</button>
+  </div>
+</div>
 
