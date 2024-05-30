@@ -1,7 +1,7 @@
 ---
 // Definir la interfaz TypeScript para las props
 import { Image } from "astro:assets";
-import { BtnNuevo } from "@components/ui/buttons/BtnNuevo.astro";
+import  BtnNuevo from "@components/ui/buttons/BtnNuevo.astro";
 
 interface Props {
   title?: string;
@@ -32,11 +32,10 @@ const { title, subTitle } = Astro.props;
         class="pb-8"    
 	 />
     <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
-    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4">hola</p>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Botón</button>
-
+    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4">hola</p>
+   
     <BtnNuevo 
-      title={title}
+      title="Ver más"
       url=""
       />
       
@@ -51,8 +50,11 @@ const { title, subTitle } = Astro.props;
         class="pb-8"        
 	 />
     <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
-    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4">loca</p>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Botón</button>
+    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4" >loca</p>
+    <BtnNuevo 
+    title="Ver más"
+    url=""
+       />
   </div>
 </div>
 
