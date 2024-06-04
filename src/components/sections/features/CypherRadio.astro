@@ -2,7 +2,8 @@
 // Definir la interfaz TypeScript para las props
 import { Image } from "astro:assets";
 import  BtnNuevo from "@components/ui/buttons/BtnNuevo.astro";
-import FotoCyper from "@images/acelerador.jpg";
+import FotoCyper1 from "@images/temporada1.jpg";
+import FotoCyper2 from "@images/temporada2.jpg";
 
 interface Props {
   title?: string;
@@ -27,17 +28,19 @@ const { title, subTitle } = Astro.props;
     <Image
         width={400}
         height={400}
-        src={FotoCyper}
+        src={FotoCyper1}
         alt="alt"               
         format={"jpg"}  
         class="pb-8"    
 	 />
     <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
-    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4">hola</p>
+    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4 text-center">Temporada 1</p>
+    <p class="text-balance text-1sm text-neutral-800 dark:text-neutral-200 md:text-2sm pt-4 pb-4 text-center">¡Descubre la primera temporada de Cyperadio,Sumérgete en conversaciones inspiradoras sobre Web3 y la tecnologia Blockchain!</p>
+
    
     <BtnNuevo 
       title="Ver más"
-      url=""
+      url="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html"
       />
       
   </div>
@@ -45,17 +48,20 @@ const { title, subTitle } = Astro.props;
     <Image
         width={400}
         height={400}
-        src={FotoCyper}
+        src={FotoCyper2}
         alt="alt"               
         format={"jpg"}  
         class="pb-8"        
 	 />
     <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
-    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4" >loca</p>
+    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4 text-center" >Temporada 2</p>
+    <p class="text-balance text-1sm text-neutral-800 dark:text-neutral-200 md:text-2sm pt-4 pb-4 text-center">¡Descubre la segunda temporada de Cyperadio,Sumérgete en conversaciones inspiradoras sobre Web3 y la tecnologia Blockchain!</p>
+    
     <BtnNuevo 
     title="Ver más"
-    url=""
+    url="https://www.ivoox.com/podcast-cypher-radio-2024_sq_f12390191_1.html"
        />
+       
   </div>
 </div>
 
