@@ -7,13 +7,13 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
+
 import constructionWorkers from "@images/construction-workers.avif";
 import aerialView from "@images/aerial-view.avif";
 import usingTools from "@images/using-tools.avif";
 import progressBuilding from "@images/progress-building.avif";
+import nodo1 from "@/images/nodo1.jpg";
+import nodo11 from "@/images/nodo11.jpg";
 import underConstruction from "@images/under-construction.avif";
 import { SITE } from "@data/constants";
 
@@ -34,38 +34,31 @@ interface Article {
 }
 
 const articles: Article[] = [
-  {
-    isRightSection: true,
-    title: "Delivering Expert Guidance",
-    subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
-    single: false,
-    imgOne: blueprints,
-    imgOneAlt: "Blueprints and digital tablet with construction plans.",
-    imgTwo: personWorking,
-    imgTwoAlt: "Person working in the office",
-  },
-  {
+{
     isRightSection: false,
     title: "Transforming Designs into Reality",
     subTitle:
       "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
-    img: beforeAfter,
+    img: nodo1,
     imgAlt: "Construction site before and after",
     btnExists: true,
-    btnTitle: "Learn More",
+    btnTitle: "Ver el nodo",
     btnURL: "#",
   },
+
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "GATEWAY WASI",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Gateway ubicado en NewJersey ",
     single: false,
     imgOne: constructionWorkers,
     imgOneAlt: "Construction workers orchestrating a project",
     imgTwo: aerialView,
     imgTwoAlt: "Aerial view of managed construction",
+    btnExists: true,
+    btnTitle: "Ver el Gateway",
+    btnURL: "#",
   },
   {
     isRightSection: false,
@@ -75,6 +68,9 @@ const articles: Article[] = [
     img: usingTools,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+      btnExists: true,
+    btnTitle: "Ver el Gateway",
+    btnURL: "#",
   },
   {
     isRightSection: true,
@@ -96,12 +92,23 @@ const pageTitle: string = `Services | ${SITE.title}`;
 ---
 
 <MainLayout
+
+btnExists?: boolean;
+btnTitle?: string;
+btnURL?: string;
+single?: boolean;
+img?: any;
+imgAlt?: string;
+imgOne?: any;
+imgOneAlt?: string;
+imgTwo?: any;
+imgTwoAlt?: string;
   title={pageTitle}
   structuredData={{
-    "@context": "https://schema.org",
+    "@context": "https://platohedro.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
+    "@id": "https://platohedro.org",
+    "url": "https://platohedro.org",
     "name": "Infraestructura",
     "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
     "isPartOf": {
@@ -115,10 +122,11 @@ const pageTitle: string = `Services | ${SITE.title}`;
 >
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
+
     title="Infraestructura"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
-    btnExists={true}
-    btnTitle="Schedule a Consultation"
+    subTitle="Desde Platohedro que la infraestructura es uno de los componentes escenciales para que los poryectos tecnologicos se conciban, con nustros nodos y gateways aportamos a que la infraestructura de la Nym VPN tenga mejor respuesta para el usuario"
+    btnExists={true},
+    btnTitle="Saber más sobre Nym"
     btnURL="#"
   />
   <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
