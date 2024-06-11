@@ -16,7 +16,7 @@ interface Props {
 const { title, subTitle } = Astro.props;
 
 ---
-
+<!-- 
 <div class="text-center pb-8 pt-8">
   <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
 <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl">{subTitle}</p>
@@ -64,4 +64,71 @@ const { title, subTitle } = Astro.props;
        
   </div>
 </div>
+
+-->
+
+<div class="text-center flex justify-around">
+
+  <div class="max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-gray-700">
+
+  <div class="p-5">
+    <Image
+    width={500}
+    height={500}
+    src={FotoCyper1}
+    alt="alt"               
+    format={"jpg"}  
+    class="pb-8"        
+  />
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>      
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{subTitle}</p>
+
+      <BtnNuevo 
+      title="Ver más"
+      url="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html"
+      />
+
+     
+      <!-- <a href="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">
+          Ver más
+           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+      </a> -->  
+     
+  </div>
+</div>
+
+<div class="max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-neutral-900 dark:border-gray-700">
+
+  <div class="p-5">
+    <Image
+    width={500}
+    height={500}
+    src={FotoCyper2}
+    alt="alt"               
+    format={"jpg"}  
+    class="pb-8"        
+  />
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>      
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{subTitle}</p>
+
+      <!-- <a href="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">
+          Ver más
+           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+      </a>-->
+
+      <BtnNuevo 
+      title="Ver más"
+      url="https://www.ivoox.com/podcast-cypher-radio-2024_sq_f12390191_1.html"
+         />
+      
+  </div>  
+</div>
+  
+</div>
+
+
 
