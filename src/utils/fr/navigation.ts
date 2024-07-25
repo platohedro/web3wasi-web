@@ -28,11 +28,9 @@ const footerLinks = [
 ];
 
 const socialLinks = {
-  facebook: "#",
-  x: "#",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "#",
-  slack: "#",
+  facebook: "https://www.facebook.com/platohedro",
+  x: "https://x.com/platohedro",
+  github: "https://github.com/platohedro",
 };
 
 export default {
