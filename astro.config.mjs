@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig,  passthroughImageService } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
@@ -10,6 +10,8 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://platohedro.org",
   image: {
+    service: passthroughImageService(),
+    
     domains: ["images.unsplash.com"],
   },
   i18n: {

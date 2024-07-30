@@ -3,6 +3,7 @@ const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Web3 EsCool", url: "/products" },
   { name: "Infraestructura", url: "/services" },
+  { name: "Glosario", url: "/glosario" },
   { name: "Bitácora", url: "/blog" },
   { name: "Acerca de", url: "/contact" },
 ];
