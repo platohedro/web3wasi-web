@@ -12,6 +12,9 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
+
+
+
 // getStaticPaths is used to pre-render all routes based on the blog posts
 export async function getStaticPaths() {
   const blogPosts = await getCollection("blog", ({ id }) => {
@@ -23,7 +26,7 @@ export async function getStaticPaths() {
   }));
 }
 // Get the current post's data
-const { post } = Astro.props;
+const  { post  } = Astro.props;
 
 // Get all blog posts
 const blogPosts: CollectionEntry<"blog">[] = await getCollection(
