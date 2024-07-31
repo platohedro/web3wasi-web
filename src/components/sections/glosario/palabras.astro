@@ -1,8 +1,217 @@
 ---
+const { title, subTitle } = Astro.props;
+
+// Define TypeScript interface for props
+interface Props {
+  title: string;
+  subTitle?: string;
+}
 ---
 
 
 <div>
+    <h1 class="text-center pt-8 text-4xl dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold"> Glosario </h1>
 
-    
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Web3:</h3>
+    <p>Nueva generación de internet que utiliza tecnologías descentralizadas
+        como blockchain. Web3 se centra en la creación de aplicaciones más seguras y
+        transparentes, devolviendo el control de los datos a los usuarios.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Blockchain:</h3>
+    <p>Cadena de bloques que registra transacciones de manera
+        descentralizada. Cada bloque contiene un conjunto de transacciones y está
+        vinculado al bloque anterior, creando una cadena inmutable y segura.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Token:</h3>
+    <p>Representación digital de un activo o utilidad en una blockchain. Los
+        tokens pueden representar criptomonedas, derechos de propiedad, acceso a
+        servicios y más, y se crean y gestionan mediante contratos inteligentes.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Criptomoneda:</h3>
+    <p>Moneda digital que utiliza criptografía para asegurar
+        transacciones. Las criptomonedas permiten realizar pagos seguros y almacenan
+        valor de manera digital sin la necesidad de intermediarios.</p>
+  </div>
+
+
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Halving (Halvening):</h3>
+    <p>Evento en Bitcoin donde la recompensa por minar un bloque
+        se reduce a la mitad. El halving ocurre aproximadamente cada cuatro años y está
+        diseñado para controlar la inflación de Bitcoin.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Bitcoin:</h3>
+    <p>La primera criptomoneda descentralizada, creada por una persona o
+        grupo de personas bajo el seudónimo de Satoshi Nakamoto. Bitcoin permite
+        transferencias de valor sin intermediarios a través de la tecnología blockchain.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Satoshi:</h3>
+    <p>La unidad más pequeña de Bitcoin, equivalente a 0.00000001 BTC. El
+        nombre proviene del creador seudónimo de Bitcoin, Satoshi Nakamoto.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Ethereum:</h3>
+    <p>Plataforma blockchain que permite la creación y ejecución de contratos
+        inteligentes y aplicaciones descentralizadas (DApps). Ethereum tiene su propia
+        criptomoneda llamada Ether (ETH), utilizada para pagar transacciones y servicios
+        en la red.</p>
+  </div>
+
+
+
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">DApp (Aplicación Descentralizada):</h3>
+    <p>Aplicaciones que funcionan en una red
+        blockchain en lugar de en un servidor centralizado. Las DApps ofrecen mayor
+        transparencia, resistencia a la censura y seguridad al eliminar intermediarios..</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Smart Contract (Contrato Inteligente):</h3>
+    <p>Programas autoejecutables que se
+        ejecutan en una blockchain. Estos contratos se activan automáticamente cuando
+        se cumplen ciertas condiciones predefinidas, eliminando la necesidad de
+        intermediarios.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Nodo:</h3>
+    <p>Dispositivo que participa en una red blockchain, manteniendo una copia del
+        registro completo de transacciones. Los nodos validan y propagan transacciones,
+        y algunos pueden participar en el proceso de consenso de la red.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Proof of Work (PoW):</h3>
+    <p>Mecanismo de consenso que requiere que los participantes
+        resuelvan problemas criptográficos complejos para validar transacciones y crear
+        nuevos bloques. Este proceso consume mucha energía, pero es muy seguro.</p>
+  </div>
+
+
+
+
+
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Proof of Stake (PoS):</h3>
+    <p>Mecanismo de consenso que selecciona validadores
+        basándose en la cantidad de criptomonedas que poseen y están dispuestos a
+        "apostar" como garantía. PoS es más eficiente energéticamente que PoW y puede
+        escalar mejor.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">DeFi (Finanzas Descentralizadas):</h3>
+    <p>Ecosistema de aplicaciones financieras que
+        operan en blockchains públicas, eliminando la necesidad de intermediarios como
+        bancos. DeFi incluye préstamos, intercambios, seguros y otros servicios
+        financieros.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Wallet (Billetera):</h3>
+    <p>Software o dispositivo físico que almacena claves privadas y
+        públicas y permite gestionar criptomonedas. Las billeteras pueden ser calientes
+        (conectadas a internet) o frías (sin conexión a internet) para mayor seguridad.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Exchange (Intercambio):</h3>
+    <p>Plataforma donde los usuarios pueden comprar, vender
+        y comerciar criptomonedas. Los intercambios pueden ser centralizados (CEX) o
+        descentralizados (DEX), con diferentes niveles de seguridad y control.</p>
+  </div>
+
+
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Private Key (Clave Privada):</h3>
+    <p>Secuencia alfanumérica que permite a los usuarios
+        acceder y gestionar sus criptomonedas. Las claves privadas deben mantenerse
+        seguras, ya que su pérdida puede resultar en la pérdida de los fondos asociados.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Public Key (Clave Pública):</h3>
+    <p>Secuencia alfanumérica derivada de la clave privada
+        que se utiliza para recibir criptomonedas. La clave pública se puede compartir
+        libremente, mientras que la clave privada debe permanecer confidencial.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">DAO (Organización Autónoma Descentralizada):</h3>
+    <p>Organización gestionada por
+        reglas codificadas en contratos inteligentes en lugar de una autoridad central. Las
+        DAOs permiten la toma de decisiones colectivas y la gestión de recursos de
+        manera transparente y democrática.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Governance (Gobernanza):</h3>
+    <p>Mecanismos y procesos para la toma de decisiones
+        en una blockchain o proyecto descentralizado. La gobernanza puede incluir
+        votaciones, propuestas y otros métodos para que los participantes influyan en el
+        desarrollo del proyecto.</p>
+  </div>
+
+
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">NFT (Token No Fungible):</h3>
+    <p>Token digital único que representa propiedad o acceso
+        a un activo específico, como arte digital, coleccionables y más. Los NFTs son
+        indivisibles y no intercambiables directamente como las criptomonedas.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Whitepaper:</h3>
+    <p>Documento técnico que describe un proyecto blockchain, incluyendo
+        su tecnología, propósito y planes futuros. Los whitepapers son esenciales para
+        informar a los posibles inversores y la comunidad sobre el proyecto.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">AirDrop:</h3>
+    <p>Distribución gratuita de tokens a los usuarios, generalmente como parte
+        de una campaña de marketing o para recompensar a los primeros adoptantes. Los
+        airdrops ayudan a aumentar la adopción y visibilidad de un proyecto.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Cold Wallet (Billetera Fría):</h3>
+    <p>Dispositivo o método de almacenamiento de
+        criptomonedas que no está conectado a internet. Las billeteras frías son más
+        seguras contra hackeos y robos en comparación con las billeteras calientes.</p>
+  </div>
+
+
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">NFT (Token No Fungible):</h3>
+    <p>Token digital único que representa propiedad o acceso
+        a un activo específico, como arte digital, coleccionables y más. Los NFTs son
+        indivisibles y no intercambiables directamente como las criptomonedas.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Whitepaper:</h3>
+    <p>Documento técnico que describe un proyecto blockchain, incluyendo
+        su tecnología, propósito y planes futuros. Los whitepapers son esenciales para
+        informar a los posibles inversores y la comunidad sobre el proyecto.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">AirDrop:</h3>
+    <p>Distribución gratuita de tokens a los usuarios, generalmente como parte
+        de una campaña de marketing o para recompensar a los primeros adoptantes. Los
+        airdrops ayudan a aumentar la adopción y visibilidad de un proyecto.</p>
+  </div>
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Cold Wallet (Billetera Fría):</h3>
+    <p>Dispositivo o método de almacenamiento de
+        criptomonedas que no está conectado a internet. Las billeteras frías son más
+        seguras contra hackeos y robos en comparación con las billeteras calientes.</p>
+  </div>
+
+
+  <div class="p-4 shadow-lg rounded-lg bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
+    <h3 class="text-xl font-bold">Hot Wallet (Billetera Caliente):</h3>
+    <p>Billetera de criptomonedas que está conectada a
+        internet. Las billeteras calientes son más convenientes para transacciones diarias,
+        pero son más vulnerables a hackeos.</p>
+  </div>
+
+
+</div>
+
 </div>
