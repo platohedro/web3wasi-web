@@ -1,0 +1,80 @@
+---
+const { title, subTitle } = Astro.props;
+
+// Define TypeScript interface for props
+interface Props {
+  title: string;
+  subTitle?: string;
+}
+---
+
+<section class="pt-8 px-4 sm:px-6 lg:px-8 text-center">
+  <h1 class="text-4xl mb-6 text-neutral-800 dark:text-neutral-200">
+    Blockchain Accelerator Machine $BAM
+  </h1>
+  <p class="text-neutral-800 dark:text-neutral-200">
+    $BAM es un curso masivo abierto en línea 100% producido en español, destinado a enseñar a desarrolladores junior las habilidades necesarias para contribuir al ecosistema de Ethereum en América Latina. Este proyecto está orientado a promover el uso y la adopción de la red Ethereum, brindando a los desarrolladores junior el conocimiento técnico básico necesario para sumergirse en la comunidad de desarrollo de Ethereum.
+  </p>
+  <p class="text-neutral-800 dark:text-neutral-200 text-xl pt-4 pb-4">
+    Apoyado por el programa de soporte del ecosistema de EF.
+  </p>
+  <a
+    href="https://platohedro.gitbook.io/b.a.m/"
+    target="_blank"
+    class="text-blue-500 dark:text-blue-300"
+  >
+    <div class="mt-4 text-4xl text-neutral-800 dark:text-neutral-200 font-bold">
+      <span>Ver la Documentación </span>
+    </div>
+  </a>
+
+  <div class="mt-8 space-y-12">
+    <div class="shadow-lg rounded-lg p-6 bg-white dark:bg-neutral-800 mx-auto max-w-3xl">
+      <div class="text-3xl mb-4 text-neutral-800 dark:text-neutral-200 font-normal hover:font-bold ">
+        <h2 >Sesión 1</h2>
+      </div>
+      <p class="text-neutral-600 dark:text-neutral-400 mb-4">Introducción a blockchain</p>
+      <div class="flex justify-center">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TDUtSpppeRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadow-lg rounded-lg p-6 bg-white dark:bg-neutral-800 mx-auto max-w-3xl">
+      <div class="text-3xl mb-4 text-neutral-800 dark:text-neutral-200 font-normal hover:font-bold">
+        <h2>Sesión 2</h2>
+      </div>
+      <p class="text-neutral-600 dark:text-neutral-400 mb-4">Basic FrontEnd</p>
+      <div class="flex justify-center">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GbqXD3NckkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadow-lg rounded-lg p-6 bg-white dark:bg-neutral-800 mx-auto max-w-3xl">
+      <div class="text-3xl mb-4 text-neutral-800 dark:text-neutral-200 font-normal hover:font-bold">
+        <h2>Sesión 3</h2>
+      </div>
+      <p class="text-neutral-600 dark:text-neutral-400 mb-4">Introducción a Solidity</p>
+      <div class="flex justify-center">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1ojQxE3OKUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadow-lg rounded-lg p-6 bg-white dark:bg-neutral-800 mx-auto max-w-3xl">
+      <div class="text-3xl mb-4 text-neutral-800 dark:text-neutral-200 font-normal hover:font-bold">
+        <h2>Sesión 4</h2>
+      </div>
+      <p class="text-neutral-600 dark:text-neutral-400 mb-4">Introducción a Rainbowkit</p>
+      <div class="flex justify-center">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/W3sczxEvQyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
