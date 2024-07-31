@@ -23,7 +23,7 @@ export async function getStaticPaths() {
   }));
 }
 // Get the current post's data
-const { post } = Astro.props;
+const { post } = Astro.props as { post: CollectionEntry<"blog"> };
 
 // Get all blog posts
 const blogPosts: CollectionEntry<"blog">[] = await getCollection("blog",
@@ -91,7 +91,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
       <!--Blog post contents-->
       <div class="mb-5 space-y-5 md:mb-8 md:space-y-8">
         {
-          post.data.contents.map((content: string, index: any) =>
+          post.data.contents.map((content: string, index: number) =>
             index === 1 ? (
               <>
                 <p class="text-pretty text-lg text-neutral-700 dark:text-neutral-300">
@@ -121,7 +121,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
           class="flex flex-wrap gap-x-2 gap-y-1 sm:flex-nowrap sm:items-center sm:gap-y-0"
         >
           {
-            post.data.tags?.map((tag: string, index) => (
+            post.data.tags?.map((tag: string, index: number) => (
               <span class="inline-flex items-center gap-x-1.5 rounded-lg bg-neutral-400/30 px-3 py-1.5 text-xs font-medium text-neutral-700 outline-none focus:outline-none focus-visible:outline-none focus-visible:ring dark:bg-neutral-700/60 dark:text-neutral-300">
                 {capitalize(tag)}
               </span>
@@ -159,7 +159,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
     </div>
 
     <div class="grid grid-cols-2 gap-6">
-      {relatedPosts.map((entry) => <CardRelated blogEntry={entry} />)}
+      {relatedPosts.map((entry: CollectionEntry<"blog">) => <CardRelated blogEntry={entry} />)}
     </div>
   </section>
 </MainLayout>

@@ -10,8 +10,6 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://platohedro.org",
   image: {
-  
-    
     domains: ["images.unsplash.com"],
   },
   i18n: {
