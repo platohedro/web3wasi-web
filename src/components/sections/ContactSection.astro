@@ -9,11 +9,15 @@ import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
 // Define the variables that will be used in this component
-const title: string = "Acerca de ";
+const title: string = "Nosotros";
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services, Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services., Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
-const Mision: string = "Mision";
-const DescMision: string = "Nuestra mision es....";
+  "Somos una entidad sin ánimo de lucro que funciona como una plataforma creativa colaborativa con sede en Medellín, Colombia. Desde el 2004 nos dedicamos a la creación y la experimentación artística, la creación de contenidos comunicativos, la investigación permanente de la cultura libre y las pedagogías alternativas. Estos procesos se guían por la búsqueda del bienestar común para todxs, basada en la filosofía del Buen Vivir y el Buen Conocer.";
+
+const Mision: string = "Misión";
+const DescMision: string = "Ser una Plataforma creativa que promueva la experimentación por medio del Arte, el #BuenConocer (conocimiento abierto, participativo y colaborativo) y la apropiación de tecnologías que detonen ideas y propuestas Libres y Compartidas para construir una sociedad del #BuenVivir.";
+
+const Vision: string = "Visión";
+const DescVision: string = "Un #BuenVivir construido de forma participativa por una sociedad con inteligencia colectiva y libre.";
 ---
 
 <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
@@ -27,17 +31,37 @@ const DescMision: string = "Nuestra mision es....";
       <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
         {subTitle}
       </p>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-2xl lg:max-w-5xl">
+    <div class="text-center">
       <h2
         class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
       >
+
         {Mision}
       </h2>
       <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
         {DescMision}
       </p>
     </div>
+  </div>
 
-    <!-- <div class="mt-12 grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
+  <div class="mx-auto max-w-2xl lg:max-w-5xl">
+    <div class="text-center">
+      <h3
+      class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+    >
+      {Vision}
+    </h3>
+    <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
+      {DescVision}
+    </p>
+    </div>
+  </div>
+
+  <!-- <div class="mt-12 grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
       <div class="flex flex-col rounded-xl p-4 sm:p-6 lg:p-8">
         <h2
           class="mb-8 text-xl font-bold text-neutral-700 dark:text-neutral-300"
