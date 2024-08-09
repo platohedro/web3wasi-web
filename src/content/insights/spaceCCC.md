@@ -5,9 +5,8 @@ cardImage: "@/images/xxPH.jpg"
 cardImageAlt: "Top view mechanical tools arrangement"
 ---
 
-<div>
 Amigxs y comunidad del mundo #Web3 Les esperamos en nuestro #SpaceX semanal, está vez para conversar en torno al cuidado, la comunidad y lo común. En @platohedro vivimos la #Culturavivacomunitaria desde la construcción y el compartir de saberes junto a @ok_lex_ y @Irvinggg.
-</div>
-<div>
+
+
 <a href="https://x.com/i/spaces/1mrGmyBOLwBGy" target="_blank"><b>Clic aquí </b></a>para escucharlo en la red social space 
-</div>
+[Clic aquí para escucharlo en la red social space](https://x.com/i/spaces/1mrGmyBOLwBGy)

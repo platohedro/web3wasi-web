@@ -5,12 +5,7 @@ cardImage: "@/images/fuel.jpg"
 cardImageAlt: "Top view mechanical tools arrangement"
 ---
 
-
-
-
-<h2>Dame más Gasolina 1 </h2>
-
-<h4> <a href="https://www.youtube.com/embed/PvWpQJA_91s" target="_blank"><b>Clic aquí </b> para ver video</a></h4> 
+## Dame más Gasolina 1
 
 A través de un  taller organizado y realizado en Platohedro, se llevó a cabo una introducción al ecosistema de Fuel Network. Este espacio nos brindó una gran oportunidad para que las personas interesadas en conocer sobre la red combustible y sus diferentes aplicaciones. 
 
@@ -18,9 +13,10 @@ Durante el taller los y las participantes aprendieron sobre los diferentes compo
 
 Fue una experiencia exitosa de aprendizaje, ya que proporcionó una completa introducción al ecosistema de Fuel Network. Los y las participantes aprendieron de primera mano y a través de acompañamiento personalizado, sobre las posibilidades de trabajar con esta plataforma de Blockchain emergente.
 
+[Clic aquí para ver video](https://www.youtube.com/embed/PvWpQJA_91s)
 
-<h2>Dame más Gasolina 2</h2>
-<h4> <a href="https://www.youtube.com/embed/6Y1n0JXEfqM" target="_blank"><b>Clic aquí </b> para ver video</a></h4>
+
+## Dame más Gasolina 2
 
 Consistió en un segundo espacio de formación, a través de un taller guiado, en donde las personas participantes tuvieron la oportunidad de conocer y trabajar con Sway, un lenguaje de programación basado en Rust diseñado específicamente para la creación de contratos inteligentes. 
 
@@ -28,12 +24,13 @@ El taller estuvo basado en las características únicas de Sway, como su sintaxi
 
 Finalmente, por medio de un ejercicio práctico tuvieron la oportunidad de aplicar los conocimientos aprendidos en un trabajo grupal para escribir y probar contratos inteligentes simples utilizando Sway, depuración de errores y la optimización del rendimiento de los contratos, todo basado en un acompañamiento personalizado por parte de los facilitadores. 
 
+[Clic aquí para ver video](https://www.youtube.com/embed/6Y1n0JXEfqM)
 
-<h2>Dame más Gasolina 3 </h2>
 
-<h4> <a href="https://www.youtube.com/embed/hYfYkWUfUjk" target="_blank"><b>Clic aquí </b> para ver video</a></h4>
-
+## Dame más Gasolina 3
 
 En esta sesión se buscó generar un espacio de aplicación de conocimientos, a través de un taller práctico, orientado de forma personalizada por facilitadores, en donde, a través de un trabajo por grupos los y las participantes utilizaron Sway, para crear sus propios contratos, buscando optimizar el rendimiento y seguridad de los mismos. 
 
 Los contratos creados por los grupos en este ejercicio, incluyeron una variedad de funcionalidades, desde transacciones simples, hasta acuerdos de alta complejidad. Los grupos participantes tuvieron la oportunidad de poner a prueba sus contratos utilizando la red combustible de Fuel Network, para evidenciar cómo y de qué formas funcionan los contratos en un entorno real. 
+
+[Clic aquí para ver video](https://www.youtube.com/embed/hYfYkWUfUjk)

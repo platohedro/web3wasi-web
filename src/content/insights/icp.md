@@ -5,8 +5,7 @@ cardImage: "@/images/icpmed.png"
 cardImageAlt: "Top view mechanical tools arrangement"
 ---
 
-<h2> Hackathon ICP en Medellín: </h2>
-
+## Hackathon ICP en Medellín: 
 
 El protocolo de blockchain ICP (Internet Computer Protocol) llevó a cabo su primera hackathon en la vibrante ciudad de Medellín, en colaboración con la prestigiosa Universidad de Antioquia. Este evento marcó un hito importante en el desarrollo y promoción de la tecnología blockchain en la región, atrayendo a estudiantes, desarrolladores y entusiastas de la tecnología de toda Colombia y más allá.
 
