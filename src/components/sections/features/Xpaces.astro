@@ -2,7 +2,7 @@
 // Definir la interfaz TypeScript para las props
 import { Image } from "astro:assets";
 import BtnNuevo from "@components/ui/buttons/BtnNuevo.astro";
-import FotoCyper1 from "@images/xPH.jpg";
+import FotoCyper1 from "@images/spaceCyC.jpg";
 
 interface Props {
   title?: string;
@@ -36,6 +36,7 @@ const { title, subTitle } = Astro.props;
         format={"jpg"}
         class="pb-8"
       />
+      <a href="/spaces">
       <h5
         class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
       >
@@ -44,11 +45,8 @@ const { title, subTitle } = Astro.props;
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
         {subTitle}
       </p>
-
-      <BtnNuevo
-        title="Ver más"
-        url="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html"
-      />
+    </a>
+     
     </div>
   </div>
 </div>
