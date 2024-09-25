@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 import  BtnNuevo from "@components/ui/buttons/BtnNuevo.astro";
 import FotoCyper1 from "@images/temporada1.jpg";
 import FotoCyper2 from "@images/temporada2.jpg";
-import FotoCyper3 from "@images/Temporada3.jpg";
+import FotoCyper3 from "@images/temporada3.jpg";
 
 interface Props {
   title?: string;
@@ -17,57 +17,6 @@ interface Props {
 const { title, subTitle } = Astro.props;
 
 ---
-<!-- 
-<div class="text-center pb-8 pt-8">
-  <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
-<p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl">{subTitle}</p>
-</div>
-
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-  <div class="flex flex-col justify-center items-center">
-    <Image
-        width={400}
-        height={400}
-        src={FotoCyper1}
-        alt="alt"               
-        format={"jpg"}  
-        class="pb-8"    
-	 />
-    <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
-    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4 text-center">Temporada 1</p>
-    <p class="text-balance text-1sm text-neutral-800 dark:text-neutral-200 md:text-2sm pt-4 pb-4 text-center">¡Descubre la primera temporada de Cyperadio,Sumérgete en conversaciones inspiradoras sobre Web3 y la tecnologia Blockchain!</p>
-
-   
-    <BtnNuevo 
-      title="Ver más"
-      url="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html"
-      />
-      
-  </div>
-  <div class="hidden md:flex flex-col justify-center items-center">
-    <Image
-        width={400}
-        height={400}
-        src={FotoCyper2}
-        alt="alt"               
-        format={"jpg"}  
-        class="pb-8"        
-	 />
-    <h1 class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl">{title}</h1>
-    <p class="text-balance text-1xl font-bold text-neutral-800 dark:text-neutral-200 md:text-2xl pt-4 pb-4 text-center" >Temporada 2</p>
-    <p class="text-balance text-1sm text-neutral-800 dark:text-neutral-200 md:text-2sm pt-4 pb-4 text-center">¡Descubre la segunda temporada de Cyperadio,Sumérgete en conversaciones inspiradoras sobre Web3 y la tecnologia Blockchain!</p>
-    
-    <BtnNuevo 
-    title="Ver más"
-    url="https://www.ivoox.com/podcast-cypher-radio-2024_sq_f12390191_1.html"
-       />
-       
-  </div>
-</div>
-
--->
-
 
 <a href="/radiocypher"> <h1 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white text-center pb-8">RadioCypher</h1>
 </a>
@@ -93,14 +42,6 @@ const { title, subTitle } = Astro.props;
       title="Ver más"
       url="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html"
       />
-
-     
-      <!-- <a href="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">
-          Ver más
-           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-          </svg>
-      </a> -->  
      
   </div>
 </div>
@@ -118,13 +59,7 @@ const { title, subTitle } = Astro.props;
   />
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title} - Temporada 2</h5>      
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{subTitle}</p>
-
-      <!-- <a href="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">
-          Ver más
-           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-          </svg>
-      </a>-->
+      
 
       <BtnNuevo 
       title="Ver más"
@@ -146,14 +81,7 @@ const { title, subTitle } = Astro.props;
     class="pb-8"        
   />
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title} - Temporada 3</h5>      
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{subTitle}</p>
-
-      <!-- <a href="https://www.ivoox.com/podcast-cypherplato_sq_f12080380_1.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">
-          Ver más
-           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-          </svg>
-      </a>-->
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{subTitle}</p>  
 
       <BtnNuevo 
       title="Ver más"
