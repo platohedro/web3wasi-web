@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import BtnNuevo from "@components/ui/buttons/BtnNuevo.astro";
 import FotoSpace1 from "@images/spaces3Sep.jpg";
 import FotoSpace2 from "@images/spaces17Sep.jpg";
+import FotoSpace3 from "@images/spaces1oct.jpg";
 
 interface Props {
   title?: string;
@@ -77,14 +78,14 @@ const { title, subTitle } = Astro.props;
     </div>
   </div>
 
-  <!-- <div
+  <div
     class="max-w-lg rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-neutral-900"
   >
     <div class="p-5">
       <Image
         width={500}
         height={500}
-        src={FotoCyper3}
+        src={FotoSpace3}
         alt="alt"
         format={"jpg"}
         class="pb-8"
@@ -92,7 +93,7 @@ const { title, subTitle } = Astro.props;
       <h5
         class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
       >
-        {title} - Temporada 3
+        {title}  Regen
       </h5>
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
         {subTitle}
@@ -100,9 +101,9 @@ const { title, subTitle } = Astro.props;
 
       <BtnNuevo
         title="Ver más"
-        url="https://www.ivoox.com/podcast-cypher-radio-2024_sq_f12390191_1.html"
+        url="https://x.com/i/spaces/1zqKVYzWRXnxB"
       />
     </div>
   </div>
-  -->
+  
 </div>
